@@ -1,0 +1,51 @@
+.content{
+  display: flex;
+  height: 147px;
+  flex-direction: column;
+}
+
+.main{
+  width: 75%;
+  background-color: lightblue;
+}
+.aside{
+  width: 25%;
+  background-color: aquamarine;
+}
+
+@media screen and (max-width:768px) {
+  .content{
+    flex-direction: column;
+  }
+}
+
+.main , .aside{
+  width: 53%;
+}
+.aside{
+  order: -1;
+}
+
+/*----------------------*/
+
+.container{
+   display: flex;
+   width: 700px;
+   height: 500px;
+   background: lightgreen;
+   flex-direction: column;
+
+}
+.item{
+  width: 80px;
+  /*border: 1px solid black;*/
+  background: grey;
+  flex-grow: 1;
+  flex-shrink: 1;
+  /*flex-direction: row;*/
+}
+.item:nth-child(5){
+  flex-grow: 6;
+  align-self: center;
+  flex-shrink: 2;
+}
